@@ -1,0 +1,14 @@
+{
+  "prices": {
+    "priceChibi": 15,
+    "priceIllustration": 70,
+    "pricePoster": 100,
+    "priceDesignSheet": 150,
+    "priceHalfBody": 15,
+    "priceFullBody": 25,
+    "priceBgSimple": 20,
+    "priceBgDetailed": 60,
+    "extraCharPct": 50,
+    "commercialPct": 50
+  }
+}

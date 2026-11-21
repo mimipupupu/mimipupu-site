@@ -1,0 +1,171 @@
+{
+ "works": [
+  {
+   "title": "Paragons — Chapter I",
+   "series": "paragons",
+   "image": "img/03df3c9d278a8cbd60b72dc8cb17f175.jpg",
+   "alt": "Paragons Chapter I cover art: a bearded giant, a young swordsman, a dragon and floating purple crystals",
+   "shape": "portrait",
+   "ratio": 0.707,
+   "lightBg": false,
+   "desc": "[A line about this piece: the story, the client or how you made it.]"
+  },
+  {
+   "title": "Ryomen Sukuna, the Disgraced One",
+   "series": "jjk",
+   "image": "img/9ae24df67ecf9e6a0a05bc01b57a9d7a.jpg",
+   "alt": "Ryomen Sukuna standing on a pile of horned skulls with a spear, in a boss-fight style frame",
+   "shape": "portrait",
+   "ratio": 0.707,
+   "lightBg": false
+  },
+  {
+   "title": "Hell answers to me",
+   "series": "marvel",
+   "image": "img/30b23740ba7659ec2c1e8ff5b54aeac9.jpg",
+   "alt": "Doctor Doom in green cloak and armour holding a crowned head, with glowing gems orbiting his hand",
+   "shape": "portrait",
+   "ratio": 0.725,
+   "lightBg": false
+  },
+  {
+   "title": "Shinjuku Showdown",
+   "series": "jjk",
+   "image": "img/f024ca5602d79262bc5b276dbb3d55c0.jpg",
+   "alt": "Sukuna lunging towards a grinning white-haired Gojo across a purple domain",
+   "shape": "landscape",
+   "ratio": 1.79,
+   "lightBg": false
+  },
+  {
+   "title": "There are no strings on me...",
+   "series": "marvel",
+   "image": "img/134e11146d2bc194dd46728e0fc423e4.jpg",
+   "alt": "Ultron in black and red armour floating in front of a swarm of drones",
+   "shape": "portrait",
+   "ratio": 0.891,
+   "lightBg": true
+  },
+  {
+   "title": "Fūga",
+   "series": "jjk",
+   "image": "img/daa255c6629c13474b2d5a2fc61e0fba.jpg",
+   "alt": "Sukuna grinning in the dark, lit red by a flame in his hand",
+   "shape": "portrait",
+   "ratio": 0.707,
+   "lightBg": false
+  },
+  {
+   "title": "Shanks",
+   "series": "onepiece",
+   "image": "img/783c5f1d583a7c7b27f42f56c01f879b.jpg",
+   "alt": "Close-up portrait of red-haired Shanks with blood running over one eye",
+   "shape": "portrait",
+   "ratio": 0.707,
+   "lightBg": false
+  },
+  {
+   "title": "The Butcher",
+   "series": "paragons",
+   "image": "img/e0968bad3656f2c054d979556e1d3cac.webp",
+   "alt": "A young fighter in a white cap and red scarf stands over a giant blood-stained cleaver, seen from below as a clawed green hand reaches in",
+   "shape": "portrait",
+   "ratio": 0.716,
+   "lightBg": false
+  },
+  {
+   "title": "Knives Out!",
+   "series": "paragons",
+   "image": "img/7e3a1ed3ecc7f3b7c408536b1108ece2.webp",
+   "alt": "The same white-capped fighter grinning mid-leap over green fields, swinging a huge cleaver and a knife as rocks fly",
+   "shape": "portrait",
+   "ratio": 0.716,
+   "lightBg": false
+  },
+  {
+   "title": "Calamari and Garlic",
+   "series": "paragons",
+   "image": "img/6edd084276894c2ae820213b63926564.webp",
+   "alt": "The white-capped fighter snarling as he swings through red tentacles, framed by bright white slash lines",
+   "shape": "portrait",
+   "ratio": 0.716,
+   "lightBg": false
+  },
+  {
+   "title": "The Plunderer",
+   "series": "paragons",
+   "image": "img/6fda83ead989037fd328c256ca8836ee.webp",
+   "alt": "A bearded giant with glowing eyes holds up a radiant orb among huge red tentacles",
+   "shape": "portrait",
+   "ratio": 0.716,
+   "lightBg": false
+  },
+  {
+   "title": "Binding Pact",
+   "series": "paragons",
+   "image": "img/93622f2d5079ffe40584ba8bd5f32379.webp",
+   "alt": "A grinning bearded warrior with a glowing red eye swings a bone-toothed club through streaks of red energy",
+   "shape": "portrait",
+   "ratio": 0.716,
+   "lightBg": false
+  },
+  {
+   "title": "The One on the Throne",
+   "series": "paragons",
+   "image": "img/d17b69c525d59f8030ec36dd8124e039.webp",
+   "alt": "The bearded warrior charges forward with two jagged weapons as a molten explosion and tentacles erupt behind him",
+   "shape": "portrait",
+   "ratio": 0.716,
+   "lightBg": false
+  },
+  {
+   "title": "Nah, I'd Win.",
+   "series": "jjk",
+   "image": "img/250b743c5d2b01ba734344a14dca7ef0.webp",
+   "alt": "A white-haired man in a dark uniform lifts his blindfold to reveal bright blue eyes, grinning beside a speech bubble that reads Nah, I would win",
+   "shape": "portrait",
+   "ratio": 0.707,
+   "lightBg": true
+  },
+  {
+   "title": "The Monarch's Decree",
+   "series": "others",
+   "image": "img/c5d6be353b18e585adbcbaab552209f2.webp",
+   "alt": "Wolf-like warriors kneel before a crowned king on a throne in a vast hall of twisted tree pillars, lit by candles and a glowing teal orb",
+   "shape": "landscape",
+   "ratio": 1.776,
+   "lightBg": false
+  },
+  {
+   "title": "A man's dream will never die",
+   "series": "onepiece",
+   "image": "img/36c30b524f4f6212b301ab7055d2783d.webp",
+   "alt": "A grinning pirate in a skull-and-crossbones hat and yellow polka-dot bandana laughs with one glowing red eye beside a red ZEHAHAHA sound effect",
+   "shape": "portrait",
+   "ratio": 0.769,
+   "lightBg": false
+  }
+ ],
+ "series": [
+  {
+   "key": "jjk",
+   "label": "Jujutsu Kaisen"
+  },
+  {
+   "key": "onepiece",
+   "label": "One Piece"
+  },
+  {
+   "key": "paragons",
+   "label": "Paragons"
+  },
+  {
+   "key": "marvel",
+   "label": "Marvel"
+  },
+  {
+   "key": "others",
+   "label": "Others"
+  }
+ ]
+}

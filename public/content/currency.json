@@ -1,0 +1,16 @@
+{
+  "currency": {
+    "rateMYR": 4.08,
+    "rateEUR": 0.845,
+    "rateGBP": 0.722,
+    "rateSGD": 1.29,
+    "rateAUD": 1.43,
+    "rateJPY": 156,
+    "adjMYR": 0.49,
+    "adjEUR": 0.95,
+    "adjGBP": 0.95,
+    "adjSGD": 0.8,
+    "adjAUD": 0.9,
+    "adjJPY": 0.75
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "payment": {
+    "bankDetails": "CIMB Bank\nLEE CHI XUAN\n7074130182\nOr scan the DuitNow QR.",
+    "tngDetails": "LEE CHI XUAN\nScan the QR with Touch ’n Go or any Malaysian banking app.",
+    "wiseLink": "https://wise.com/pay/me/chixuanl3",
+    "proofFormLink": "https://docs.google.com/forms/d/e/1FAIpQLScqOn7_OAXI7cuHO5C_3Hgs6A3yptwh2mUFmuf4StjQE1TvyA/viewform",
+    "stripeEnabled": false,
+    "stripeLink": "",
+    "tngLink": ""
+  }
+}

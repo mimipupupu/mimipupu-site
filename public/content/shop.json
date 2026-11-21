@@ -1,0 +1,11 @@
+{
+  "shop": {
+    "printA5": 12,
+    "printA4": 20,
+    "printA3": 32,
+    "shipMalaysiaRM": 10,
+    "shipOverseasUSD": 15,
+    "merchComingSoon": true,
+    "discountTestMode": false
+  }
+}

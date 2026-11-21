@@ -1,0 +1,300 @@
+{
+ "accent": {
+  "editor": "color",
+  "default": "#FF9A5C",
+  "options": [
+   "#FF9A5C",
+   "#FFB36B",
+   "#FF7A6B",
+   "#FFD6A3"
+  ],
+  "section": "Look"
+ },
+ "commissionsOpen": {
+  "editor": "boolean",
+  "default": true,
+  "section": "Commissions"
+ },
+ "discountTestMode": {
+  "editor": "boolean",
+  "default": false,
+  "section": "Shop"
+ },
+ "merchComingSoon": {
+  "editor": "boolean",
+  "default": true,
+  "section": "Shop"
+ },
+ "shipMalaysiaRM": {
+  "editor": "number",
+  "default": 10,
+  "section": "Shop"
+ },
+ "shipOverseasUSD": {
+  "editor": "number",
+  "default": 15,
+  "section": "Shop"
+ },
+ "adjMYR": {
+  "editor": "number",
+  "default": 0.49,
+  "section": "Regional pricing"
+ },
+ "adjEUR": {
+  "editor": "number",
+  "default": 0.95,
+  "section": "Regional pricing"
+ },
+ "adjGBP": {
+  "editor": "number",
+  "default": 0.95,
+  "section": "Regional pricing"
+ },
+ "adjSGD": {
+  "editor": "number",
+  "default": 0.8,
+  "section": "Regional pricing"
+ },
+ "adjAUD": {
+  "editor": "number",
+  "default": 0.9,
+  "section": "Regional pricing"
+ },
+ "adjJPY": {
+  "editor": "number",
+  "default": 0.75,
+  "section": "Regional pricing"
+ },
+ "slotsTotal": {
+  "editor": "int",
+  "default": 5,
+  "min": 1,
+  "max": 12,
+  "section": "Commissions"
+ },
+ "slotsTaken": {
+  "editor": "int",
+  "default": 0,
+  "min": 0,
+  "max": 12,
+  "section": "Commissions"
+ },
+ "priceChibi": {
+  "editor": "int",
+  "default": 15,
+  "min": 0,
+  "unit": "USD",
+  "section": "Pricing (USD)"
+ },
+ "priceIllustration": {
+  "editor": "int",
+  "default": 70,
+  "min": 0,
+  "unit": "USD",
+  "section": "Pricing (USD)"
+ },
+ "pricePoster": {
+  "editor": "int",
+  "default": 100,
+  "min": 0,
+  "unit": "USD",
+  "section": "Pricing (USD)"
+ },
+ "priceDesignSheet": {
+  "editor": "int",
+  "default": 150,
+  "min": 0,
+  "unit": "USD",
+  "section": "Pricing (USD)"
+ },
+ "priceHalfBody": {
+  "editor": "int",
+  "default": 15,
+  "min": 0,
+  "unit": "USD",
+  "section": "Pricing (USD)"
+ },
+ "priceFullBody": {
+  "editor": "int",
+  "default": 25,
+  "min": 0,
+  "unit": "USD",
+  "section": "Pricing (USD)"
+ },
+ "addComplex": {
+  "editor": "int",
+  "default": 15,
+  "min": 0,
+  "unit": "USD",
+  "section": "Add-on features (USD)"
+ },
+ "addExpression": {
+  "editor": "int",
+  "default": 10,
+  "min": 0,
+  "unit": "USD",
+  "section": "Add-on features (USD)"
+ },
+ "addOutfit": {
+  "editor": "int",
+  "default": 20,
+  "min": 0,
+  "unit": "USD",
+  "section": "Add-on features (USD)"
+ },
+ "portfolioLink": {
+  "editor": "text",
+  "default": "",
+  "section": "Links"
+ },
+ "tngLink": {
+  "editor": "text",
+  "default": "",
+  "section": "Payment accounts"
+ },
+ "tngDetails": {
+  "editor": "text",
+  "default": "LEE CHI XUAN\nScan the QR with Touch ’n Go or any Malaysian banking app.",
+  "section": "Payment accounts"
+ },
+ "bankDetails": {
+  "editor": "text",
+  "default": "CIMB Bank\nLEE CHI XUAN\n7074130182\nOr scan the DuitNow QR.",
+  "section": "Payment accounts"
+ },
+ "wiseLink": {
+  "editor": "text",
+  "default": "https://wise.com/pay/me/chixuanl3",
+  "section": "Payment accounts"
+ },
+ "proofFormLink": {
+  "editor": "text",
+  "default": "https://docs.google.com/forms/d/e/1FAIpQLScqOn7_OAXI7cuHO5C_3Hgs6A3yptwh2mUFmuf4StjQE1TvyA/viewform",
+  "section": "Payment accounts"
+ },
+ "stripeEnabled": {
+  "editor": "boolean",
+  "default": false,
+  "section": "Payment accounts"
+ },
+ "queueText": {
+  "editor": "text",
+  "default": "Client A | Poster / Comic Cover Illustration | Final touches\nClient B | OC Illustration + simple background | Colouring\nClient C | Creature Design + Sheets | Sketching\nClient D | Chibi Character Stickers | Queued",
+  "section": "Commission queue"
+ },
+ "stripeLink": {
+  "editor": "text",
+  "default": "",
+  "section": "Payment accounts"
+ },
+ "addRush": {
+  "editor": "int",
+  "default": 65,
+  "min": 0,
+  "max": 300,
+  "unit": "%",
+  "section": "Add-on features (USD)"
+ },
+ "priceBgSimple": {
+  "editor": "int",
+  "default": 20,
+  "min": 0,
+  "unit": "USD",
+  "section": "Pricing (USD)"
+ },
+ "priceBgDetailed": {
+  "editor": "int",
+  "default": 60,
+  "min": 0,
+  "unit": "USD",
+  "section": "Pricing (USD)"
+ },
+ "extraCharPct": {
+  "editor": "int",
+  "default": 50,
+  "min": 0,
+  "max": 200,
+  "unit": "%",
+  "section": "Pricing (USD)"
+ },
+ "commercialPct": {
+  "editor": "int",
+  "default": 50,
+  "min": 0,
+  "max": 300,
+  "unit": "%",
+  "section": "Pricing (USD)"
+ },
+ "rateMYR": {
+  "editor": "float",
+  "default": 4.08,
+  "min": 0,
+  "step": 0.01,
+  "section": "Exchange rates (1 USD =)"
+ },
+ "rateEUR": {
+  "editor": "float",
+  "default": 0.845,
+  "min": 0,
+  "step": 0.001,
+  "section": "Exchange rates (1 USD =)"
+ },
+ "rateGBP": {
+  "editor": "float",
+  "default": 0.722,
+  "min": 0,
+  "step": 0.001,
+  "section": "Exchange rates (1 USD =)"
+ },
+ "rateSGD": {
+  "editor": "float",
+  "default": 1.29,
+  "min": 0,
+  "step": 0.01,
+  "section": "Exchange rates (1 USD =)"
+ },
+ "rateAUD": {
+  "editor": "float",
+  "default": 1.43,
+  "min": 0,
+  "step": 0.01,
+  "section": "Exchange rates (1 USD =)"
+ },
+ "rateJPY": {
+  "editor": "float",
+  "default": 156,
+  "min": 0,
+  "step": 1,
+  "section": "Exchange rates (1 USD =)"
+ },
+ "swipeEnabled": {
+  "editor": "boolean",
+  "default": true,
+  "section": "Portfolio showcase"
+ },
+ "printA5": {
+  "editor": "int",
+  "default": 12,
+  "min": 0,
+  "unit": "USD",
+  "section": "Print shop (USD)"
+ },
+ "printA4": {
+  "editor": "int",
+  "default": 20,
+  "min": 0,
+  "unit": "USD",
+  "section": "Print shop (USD)"
+ },
+ "printA3": {
+  "editor": "int",
+  "default": 32,
+  "min": 0,
+  "unit": "USD",
+  "section": "Print shop (USD)"
+ },
+ "$preview": {
+  "width": 1440,
+  "height": 4800
+ }
+}

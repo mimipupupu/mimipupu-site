@@ -1,0 +1,152 @@
+backend:
+  name: github
+  repo: GITHUB_USERNAME/mimipupu-site
+  branch: main
+  commit_messages:
+    update: "Update site content"
+    uploadMedia: "Upload {{path}}"
+site_url: https://mimipupu.netlify.app
+display_url: https://mimipupu.netlify.app
+logo_url: /img/bf9cc112bdd7f183e75e76914e23cc4a.png
+media_folder: public/img
+public_folder: img
+collections:
+  - name: site
+    label: Website
+    editor: { preview: false }
+    files:
+      - name: commissions
+        label: "Commissions & queue"
+        file: public/content/commissions.json
+        format: json
+        fields:
+          - label: "Commissions & queue"
+            name: commissions
+            widget: object
+            collapsed: false
+            fields:
+              - { label: "Commissions open", name: commissionsOpen, widget: boolean, required: false, hint: "Turn off to show the waitlist instead" }
+              - { label: "Slots this month", name: slotsTotal, widget: number, value_type: int, min: 1, max: 12, required: false }
+              - { label: "Slots taken", name: slotsTaken, widget: number, value_type: int, min: 0, max: 12, required: false }
+              - { label: "Commission queue", name: queueText, widget: text, required: false, hint: "One order per line:  Name | Piece | Stage.  Stage = Queued, Sketching, Line art, Colouring, Final touches (or 1–5)" }
+      - name: prints
+        label: "Prints / artworks"
+        file: public/content/prints.json
+        format: json
+        fields:
+          - label: "Prints"
+            name: works
+            widget: list
+            summary: "{{fields.title}}"
+            hint: "The order here is kept within each series. Drag to reorder."
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - { label: "Series", name: series, widget: select, options: [{ label: "Jujutsu Kaisen", value: jjk }, { label: "One Piece", value: onepiece }, { label: "Paragons", value: paragons }, { label: "Marvel", value: marvel }, { label: "Others", value: others }], default: others }
+              - { label: "Image", name: image, widget: image, choose_url: false, hint: "JPG or WEBP, about 1200–2000 px tall" }
+              - { label: "Shape", name: shape, widget: select, options: [portrait, landscape], default: portrait }
+              - { label: "Image width ÷ height (optional)", name: ratio, widget: number, value_type: float, required: false, hint: "A4 portrait ≈ 0.707. Leave empty to use the default for the shape." }
+              - { label: "Light background artwork", name: lightBg, widget: boolean, required: false, default: false }
+              - { label: "Image description (for screen readers)", name: alt, widget: string, required: false }
+      - name: prices
+        label: "Commission prices (USD)"
+        file: public/content/prices.json
+        format: json
+        fields:
+          - label: "Commission prices (USD)"
+            name: prices
+            widget: object
+            collapsed: false
+            fields:
+              - { label: "The Chibi", name: priceChibi, widget: number, value_type: int, min: 0, required: false }
+              - { label: "The Illustrator", name: priceIllustration, widget: number, value_type: int, min: 0, required: false }
+              - { label: "The Poster", name: pricePoster, widget: number, value_type: int, min: 0, required: false }
+              - { label: "The Designer (design + sheets)", name: priceDesignSheet, widget: number, value_type: int, min: 0, required: false }
+              - { label: "Half body add-on", name: priceHalfBody, widget: number, value_type: int, min: 0, required: false }
+              - { label: "Full body add-on", name: priceFullBody, widget: number, value_type: int, min: 0, required: false }
+              - { label: "Simple background", name: priceBgSimple, widget: number, value_type: int, min: 0, required: false }
+              - { label: "Detailed scene", name: priceBgDetailed, widget: number, value_type: int, min: 0, required: false }
+              - { label: "Each extra character (% of price)", name: extraCharPct, widget: number, value_type: int, min: 0, max: 200, required: false }
+              - { label: "Commercial use (% extra)", name: commercialPct, widget: number, value_type: int, min: 0, max: 300, required: false }
+      - name: addons
+        label: "Add-on features (USD)"
+        file: public/content/addons.json
+        format: json
+        fields:
+          - label: "Add-on features (USD)"
+            name: addons
+            widget: object
+            collapsed: false
+            fields:
+              - { label: "Complex design details", name: addComplex, widget: number, value_type: int, min: 0, required: false }
+              - { label: "Extra expression", name: addExpression, widget: number, value_type: int, min: 0, required: false }
+              - { label: "Extra outfit", name: addOutfit, widget: number, value_type: int, min: 0, required: false }
+              - { label: "Rush / urgent (% of total)", name: addRush, widget: number, value_type: int, min: 0, max: 300, required: false }
+      - name: shop
+        label: "Print shop & shipping"
+        file: public/content/shop.json
+        format: json
+        fields:
+          - label: "Print shop & shipping"
+            name: shop
+            widget: object
+            collapsed: false
+            fields:
+              - { label: "A5 print (USD)", name: printA5, widget: number, value_type: int, min: 0, required: false }
+              - { label: "A4 print (USD)", name: printA4, widget: number, value_type: int, min: 0, required: false }
+              - { label: "A3 print (USD)", name: printA3, widget: number, value_type: int, min: 0, required: false }
+              - { label: "Shipping in Malaysia (RM)", name: shipMalaysiaRM, widget: number, value_type: float, required: false }
+              - { label: "Shipping overseas (USD)", name: shipOverseasUSD, widget: number, value_type: float, required: false }
+              - { label: "Siginnas merch: show 'Coming soon'", name: merchComingSoon, widget: boolean, required: false }
+              - { label: "Discount dial test mode", name: discountTestMode, widget: boolean, required: false, hint: "Keep OFF on the live site — when ON, visitors can spin unlimited times" }
+      - name: payment
+        label: "Payment details"
+        file: public/content/payment.json
+        format: json
+        fields:
+          - label: "Payment details"
+            name: payment
+            widget: object
+            collapsed: false
+            fields:
+              - { label: "Bank transfer (DuitNow / CIMB) details", name: bankDetails, widget: text, required: false }
+              - { label: "Touch 'n Go details", name: tngDetails, widget: text, required: false }
+              - { label: "Wise payment link", name: wiseLink, widget: string, required: false }
+              - { label: "Request / proof-of-payment Google Form link", name: proofFormLink, widget: string, required: false }
+              - { label: "Show card payment (Stripe)", name: stripeEnabled, widget: boolean, required: false }
+              - { label: "Stripe payment link", name: stripeLink, widget: string, required: false }
+              - { label: "Touch 'n Go link (optional)", name: tngLink, widget: string, required: false }
+      - name: currency
+        label: "Currencies"
+        file: public/content/currency.json
+        format: json
+        fields:
+          - label: "Currencies"
+            name: currency
+            widget: object
+            collapsed: false
+            fields:
+              - { label: "1 USD in MYR", name: rateMYR, widget: number, value_type: float, min: 0, required: false }
+              - { label: "1 USD in EUR", name: rateEUR, widget: number, value_type: float, min: 0, required: false }
+              - { label: "1 USD in GBP", name: rateGBP, widget: number, value_type: float, min: 0, required: false }
+              - { label: "1 USD in SGD", name: rateSGD, widget: number, value_type: float, min: 0, required: false }
+              - { label: "1 USD in AUD", name: rateAUD, widget: number, value_type: float, min: 0, required: false }
+              - { label: "1 USD in JPY", name: rateJPY, widget: number, value_type: float, min: 0, required: false }
+              - { label: "Regional price factor — MYR", name: adjMYR, widget: number, value_type: float, required: false, hint: "1 = full US price, 0.49 = 49% of it" }
+              - { label: "Regional price factor — EUR", name: adjEUR, widget: number, value_type: float, required: false }
+              - { label: "Regional price factor — GBP", name: adjGBP, widget: number, value_type: float, required: false }
+              - { label: "Regional price factor — SGD", name: adjSGD, widget: number, value_type: float, required: false }
+              - { label: "Regional price factor — AUD", name: adjAUD, widget: number, value_type: float, required: false }
+              - { label: "Regional price factor — JPY", name: adjJPY, widget: number, value_type: float, required: false }
+      - name: look
+        label: "Look & links"
+        file: public/content/look.json
+        format: json
+        fields:
+          - label: "Look & links"
+            name: look
+            widget: object
+            collapsed: false
+            fields:
+              - { label: "Accent colour", name: accent, widget: color, required: false }
+              - { label: "Portfolio link (optional)", name: portfolioLink, widget: string, required: false }
+              - { label: "Allow swiping the artwork carousel", name: swipeEnabled, widget: boolean, required: false }
