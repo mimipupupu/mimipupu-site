@@ -31,7 +31,7 @@ GROUPS = [
    ("adjSGD","Regional price factor — SGD",""),("adjAUD","Regional price factor — AUD",""),("adjJPY","Regional price factor — JPY",""),
  ]),
  ("look", "Look & links", [
-   ("accent","Accent colour",""),("portfolioLink","Portfolio link (optional)",""),("swipeEnabled","Allow swiping the artwork carousel",""),
+   ("aboutPhoto","About me picture","Square images look best — shown in the round frame"),("accent","Accent colour",""),("portfolioLink","Portfolio link (optional)",""),("swipeEnabled","Allow swiping the artwork carousel",""),
  ]),
 ]
 MULTILINE = {"queueText","bankDetails","tngDetails"}

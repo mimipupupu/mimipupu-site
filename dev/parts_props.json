@@ -296,5 +296,10 @@
  "$preview": {
   "width": 1440,
   "height": 4800
+ },
+ "aboutPhoto": {
+  "editor": "text",
+  "default": "img/about-mimipupu.webp",
+  "section": "Look"
  }
 }

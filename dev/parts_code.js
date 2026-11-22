@@ -1352,7 +1352,8 @@ class Component extends DCLogic {
         this.chime('seal');
       },
       reset: () => this.setState({ submitted: false, name: '', email: '', brief: '', error: '', refCode: this.newRef() }),
-      queue, faqs
+      queue, faqs,
+      aboutPhoto: (typeof p.aboutPhoto === 'string' && p.aboutPhoto.trim()) || 'img/about-mimipupu.webp'
     };
   }
 }

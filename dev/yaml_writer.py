@@ -4,6 +4,7 @@ P = json.load(open('parts_props.json'))
 REPO = open('repo.txt').read().strip() if os.path.exists('repo.txt') else 'GITHUB_USERNAME/mimipupu-site'
 def q(s): return json.dumps(s, ensure_ascii=False)
 def widget(key):
+    if key == 'aboutPhoto': return 'image'
     ed = P[key].get('editor')
     if key in MULTILINE: return 'text'
     return {'boolean':'boolean','int':'number','float':'number','number':'number','color':'color'}.get(ed,'string')

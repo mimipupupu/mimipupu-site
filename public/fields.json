@@ -292,5 +292,10 @@
   "min": 0,
   "unit": "USD",
   "section": "Print shop (USD)"
+ },
+ "aboutPhoto": {
+  "editor": "text",
+  "default": "img/about-mimipupu.webp",
+  "section": "Look"
  }
 }

@@ -2,6 +2,7 @@
   "look": {
     "accent": "#FF9A5C",
     "portfolioLink": "",
-    "swipeEnabled": true
+    "swipeEnabled": true,
+    "aboutPhoto": "img/about-mimipupu.webp"
   }
 }

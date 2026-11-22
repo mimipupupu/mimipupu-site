@@ -147,6 +147,7 @@ collections:
             widget: object
             collapsed: false
             fields:
+              - { label: "About me picture", name: aboutPhoto, widget: image, required: false, hint: "Square images look best — shown in the round frame" }
               - { label: "Accent colour", name: accent, widget: color, required: false }
               - { label: "Portfolio link (optional)", name: portfolioLink, widget: string, required: false }
               - { label: "Allow swiping the artwork carousel", name: swipeEnabled, widget: boolean, required: false }
